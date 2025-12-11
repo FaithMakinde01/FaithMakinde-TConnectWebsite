@@ -1,0 +1,268 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+    
+body {
+    
+    font-family: Arial, Sans-serif;
+    line-height: 1.6;
+    background-color: white;
+
+}
+.top-nav {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:20px 40px;
+  background-color:white;
+  border-bottom:1px solid #ddd;
+  
+}
+.logo {
+  font-size:24px;
+  font-weight:bold;
+  color:#000;
+}
+.nav-links {
+  list-style:none;
+  display:flex;
+  gap:20px;
+}
+
+
+.nav-links li a {
+    padding:8px 12px;
+    border-radius:6px;
+    color:black;
+    text-decoration:none;
+    font-size:16px;
+    transition: 0.3s;
+}
+nav ul li a:hover {
+    background-color: #6610f2;
+    color: white;
+    text-decoration:underline;
+}
+.main-hero {
+  display: flex;
+  width:100%;
+  min-height:500px;
+}
+.hero-text {
+  width: 50%;          /* Takes up half the screen */
+    background-color: #e0b0ff; 
+    padding: 40px;       /* Adds breathing room for the text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers text vertically */
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 18px;
+    max-width: 600px;
+}
+
+/* Right Side (Image Box) */
+.hero-image {
+    width: 50%;          /* Takes up the other half */
+    background-image: url("https://i.postimg.cc/sfWL23vb/Gemini-Generated-Image-5nf8v15nf8v15nf8.png");
+    background-size: cover;      /* Ensures image covers the whole box */
+    background-position: center; /* Focuses on the center of the image */
+}
+
+/* Mobile Responsiveness (Optional but recommended) */
+@media (max-width: 768px) {
+  .main-hero {
+    flex-direction:column;
+  }
+    .hero-text, .hero-image {
+        width: 100%;
+        min-height: 300px;
+    }
+    .top-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+  #main-title {
+    text-align:center;
+    font-size:3.5em;
+    color:#4C2770;
+    padding-top:50px;
+  }
+.body-text {
+  width:41.3%;
+  background-color:#e0b0ff; /*remeber to change this color*/
+  padding:60px; /
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  float:right;
+}
+.body-text h2 {
+  font-size:32px;
+  margin-bottom:20px;
+  line-height:1.2;
+}
+.body-text ul {
+  font-size:18px;
+  max-width:600px;
+ 
+}
+
+.body-text-image {
+  width:50%;
+  min-height:530px;
+  background-image: url("https://images.pexels.com/photos/7988082/pexels-photo-7988082.jpeg");
+   background-size:cover;
+   background-position:center;
+  float:left;
+}
+
+#main-title2 {
+  font-size:3.5em;
+  color: #4C2770;
+  padding-top:40px;
+  clear:both;
+  width:50%;
+  float:left;
+  text-align:left;
+}
+.requirements-subheading {
+  font-size:2em; /*for the font size*/
+  color: #4C2770;/*for the color of the text*/
+  padding-top:10px; /*for spacing at the top of the text*/
+  margin:0;
+  float:left; /*to align the text to the left*/
+  clear:both; /*By applying clear: both; to the subheading, you are telling the browser: "The floating element #main-title2 must not be on the same line as me, start me below it*/
+  width:50%;
+  
+}
+.requirements-content {
+  clear:both;
+padding-top:20px;
+text-align:left;
+  width:50%;
+  border:1px solid #c8e6c9;
+  border-radius:20px;
+  background-color:#e0b0ff;
+}
+.requirements-subheading2 {
+  font-size:2em; /*for the font size*/
+  color: #4C2770;/*for the color of the text*/
+  padding-top:10px; /*for spacing at the top of the text*/
+  margin:0;
+  float:left; /*to align the text to the left*/
+  clear:both; /*By applying clear: both; to the subheading, you are telling the browser: "The floating element #main-title2 must not be on the same line as me, start me below it*/
+  width:50%;
+  
+}
+.requirements-content2 {
+  clear:both;
+padding-top:20px;
+text-align:left;
+  width:50%;
+  border:1px solid #c8e6c9;
+  border-radius:20px;
+  max-width:600px;
+  background-color:#e0b0ff;
+ 
+}
+.site-footer {
+    /* Main dark background color */
+    background-color: ;
+    color: #black; /* White text color for readability */
+    padding: 30px 40px;
+}
+
+/* Container to manage the columns using Flexbox */
+.footer-content {
+    display: flex; 
+    /* Distributes space between the columns */
+    justify-content: space-between; 
+    /* Limits the maximum width and centers the content */
+    max-width: 1200px; 
+    margin: 0 auto 0 0;
+    /* Space between columns */
+    gap: 40px; 
+}
+
+/* Styling for each individual column */
+.footer-column {
+    /* Allows columns to grow and shrink flexibly */
+    flex: 1; 
+    min-width: 200px; /* Prevents columns from becoming too narrow */
+}
+
+/* Styling for the logo/address column to make it slightly wider */
+.footer-address {
+    flex: 1.5; 
+}
+
+/* Styling for all column headings (e.g., "Contact Us") */
+.footer-heading {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Styling for the list items (address, contact info) */
+.footer-list {
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0;
+    line-height: 1.8;
+    font-size: 20px;
+}
+
+/* Styling for the link items (e.g., email address) */
+.footer-list a {
+    color: #000;
+    text-decoration: none; /* Removes the default underline */
+    transition: color 0.3s;
+}
+
+.footer-list a:hover {
+    color:#000; /* Hover color (a bright purple) for interactivity */
+}
+
+/* Logo specific styles */
+.footer-logo {
+    /* Set a reasonable height for the logo */
+    height: 60px; 
+    width: auto;
+    /* Adds space below the logo before the address list starts */
+    margin-bottom: 15px; 
+
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        /* Stacks columns vertically on smaller screens */
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .footer-column {
+        /* Makes columns take up full width on small screens */
+        flex: none;
+        /* Adds a separation line between stacked columns */
+        border-bottom: 1px solid #3a3a3a; 
+        padding-bottom: 20px;
+    }
+
+    /* Remove border from the last column in the stack */
+    .footer-column:last-child {
+        border-bottom: none;
+    }
+}
